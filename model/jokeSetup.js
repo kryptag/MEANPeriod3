@@ -1,7 +1,9 @@
+var jokes = require("./jokeFacade");
 
-var jokes = [
+var jokeList = [
 
     {
+        "_id": "testId123123",
         "joke" : " Reality is an illusion created by a lack of alcohol",
         "type" : ["short", "alcohol", "quote"],
         "reference": { "author" : "Someone", "link" : ""},
@@ -38,7 +40,5 @@ var jokes = [
         "reference": { "author" : "Unknown", "link" : "http://thoughtcatalog.com/christopher-hudspeth/2013/09/50-terrible-quick-jokes-thatll-get-you-a-laugh-on-demand/"},
         "lastEdited" : new Date()
     }
-]
+];
 
-var result = db.jokes.insert(jokes);
-printjson(result);
